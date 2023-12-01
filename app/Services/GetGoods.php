@@ -9,12 +9,14 @@ use App\Models\Price;
 use App\Models\Reviews;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\View;
 
 class GetGoods
 {
     public function connect()
     {
-        $accessToken = "vk1.a.3CJJylQcILEqjyortfCFftnll8aBUsqRKoAgCDBBN-fFej_8iE13L9YzSOdhN9NJ5wgDdwK9_GJD8mR2o3MJSlQMT1z_jDKdg9zAS6-PpWHvDQ-kNpfFzcI66bbavzXPBYZyhM4FRl3JsPz77a7PXWRPtLZ_KxA7GGk0GywImLyGg2xSMgr8a6yvEWBTKbRCO-9_uJ5ds2hd95pLG_6DVw";
+        $accessToken = "vk1.a.ZiluqfzasBKCf1-6AmYHM_lRDznOKqhAI-e12zLzhsu1HKYsHVIHKfGAPbXP99XlUjcP_uP9knjr9ulVqDHx2_p4QEt2rtWGNGd9N_SwHVhfHp8e3wh829dN4aimjKgTlYxEAcNAOJZ-S8x2qcB7kKqAZJpfy5xil-Mp9BxnP0uGATu92z7bbysujOBBIWit5rmybk1QH2eYvvoJyLb7aQ";
         $groupId = "-197845770";
 
         $client = new Client();
@@ -30,13 +32,21 @@ class GetGoods
 
             $data = json_decode($response->getBody(), true);
 
+
+
             $items = $data['response']['items'] ?? [];
 
+            Category::query()->truncate();
+            Reviews::query()->truncate();
+            Price::query()->truncate();
+            Good::query()->truncate();
 
             foreach ($items as $item) {
 
-                $category = Category::create(
+                $category = Category::updateOrCreate(
+                    ['id' => $item['category']['id']],
                     [
+                    'id' => $item['category']['id'],
                     'name' => $item['category']['name'],
                     'inner_type' => $item['category']['inner_type'],
                     'section' =>  json_encode($item['category']['section'])
@@ -58,9 +68,9 @@ class GetGoods
                     ]
                 );
 
-                Good::updateOrCreate(
-                    ['id' => $item['id']],
+                Good::create(
                     [
+                        'id' => $item['id'],
                         'title' => $item['title'],
                         'description' => $item['description'],
                         'availability' => $item['availability'],
@@ -75,14 +85,14 @@ class GetGoods
                     ]
                 );
 
-
             }
 
+            $urls = $this->download();
+
+            return redirect()->back()->with($urls);
         }
         catch (\Exception $e) {
-            return [
-                'error' => $e->getMessage(),
-            ];
+            dd($e->getMessage());
         }
 }
 
@@ -91,5 +101,25 @@ class GetGoods
         $goods = Good::all();
 
         return GoodResource::collection($goods);
+    }
+
+
+    public function download()
+    {
+        $products = Good::all();
+        $goods = Good::paginate(20);
+        $categories = Category::all();
+        $content = View::make('yml', compact('goods', 'products','categories'))->render();
+
+        file_put_contents(storage_path('app/public/goods.yml'), $content);
+        file_put_contents(storage_path('app/public/goods.xml'), $content);
+
+        $yml = Storage::url('public/goods.yml');
+        $xml = Storage::url('public/goods.xml');
+
+
+        return ['yml' => $yml, 'xml' => $xml];
+
+
     }
 }

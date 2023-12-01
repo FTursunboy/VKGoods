@@ -16,6 +16,12 @@
         p {
             display: none;
         }
+        .page-item.active .page-link {
+            background-color: blue; /* Или любой другой цвет */
+            border-color: blue; /* Или любой другой цвет */
+            color: white;
+        }
+
     </style>
 
     <!-- Google Font: Source Sans Pro -->

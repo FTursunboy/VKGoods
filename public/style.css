@@ -8,3 +8,10 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 32px; }
+
+.page-item.active .page-link {
+    background-color: blue; /* Или любой другой цвет */
+    border-color: blue; /* Или любой другой цвет */
+    color: white;
+}
+

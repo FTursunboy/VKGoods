@@ -8,6 +8,7 @@ use App\Http\Resources\ReviewResource;
 use App\Models\Category;
 use App\Models\Good;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 use Symfony\Component\Yaml\Yaml;
 
@@ -24,14 +25,18 @@ class GoodController extends Controller
     public function download()
     {
         $products = Good::all();
+        $goods = Good::paginate(20);
         $categories = Category::all();
-        $content = View::make('yml', compact('products', 'categories'))->render();
+        $content = View::make('yml', compact('goods', 'products','categories'))->render();
 
-        file_put_contents(storage_path('goods.yml'), $content);
+        file_put_contents(storage_path('app/public/goods.yml'), $content);
+        file_put_contents(storage_path('app/public/goods.xml'), $content);
 
-        return response($content, 200, [
-            'Content-Type' => 'application/xml'
-        ]);
+        $yml = Storage::url('public/goods.yml');
+        $xml = Storage::url('public/goods.xml');
+
+
+        return ['yml' => $yml, 'xml' => $xml];
 
 
     }
@@ -48,7 +53,13 @@ class GoodController extends Controller
         $price->text = $text;
         $price->save();
         $good->price->save();
+        $good->category_id = $request->category_id;
+        $good->save();
 
-        return redirect()->back();
+        $this->download();
+
+        $urls = $this->download();
+
+        return redirect()->back()->with($urls);
     }
 }
