@@ -33,7 +33,6 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
-                                <span> <a href="{{route('get.goods')}}">Загрузить все данные</a> </span>
 
                                 <div style="margin-left: auto;"> <!-- Блок для ссылок справа -->
                                     @if(session('yml'))

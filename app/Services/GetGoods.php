@@ -16,7 +16,7 @@ class GetGoods
 {
     public function connect()
     {
-        $accessToken = "vk1.a.ZiluqfzasBKCf1-6AmYHM_lRDznOKqhAI-e12zLzhsu1HKYsHVIHKfGAPbXP99XlUjcP_uP9knjr9ulVqDHx2_p4QEt2rtWGNGd9N_SwHVhfHp8e3wh829dN4aimjKgTlYxEAcNAOJZ-S8x2qcB7kKqAZJpfy5xil-Mp9BxnP0uGATu92z7bbysujOBBIWit5rmybk1QH2eYvvoJyLb7aQ";
+        $accessToken = "vk1.a.n_eCSEnjkuv2V5u9QGOcVz7kIAVsXZXvyx5qJZ48q9wKk3lTgsZ4IfRA7GMUQTJ2nbJmnj5ow5My3ZNlKlYGbfJcgnzIpq1_CmWdfBd8WwqFmGWDVaHd4WFj6sU6suS1rjjD0rcQChwHra9YQn3tS6L8_Pb97vVjZ2lcjwFDLNOoiUnSAytaxQ2qzmH6jxsSw6kAvx5m-UW3ri8dksX2GA";
         $groupId = "-197845770";
 
         $client = new Client();
