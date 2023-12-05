@@ -1,4 +1,6 @@
-    <yml_catalog >
+
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<yml_catalog  >
         <shop>
             <categories>
                 @foreach($categories as $category)
