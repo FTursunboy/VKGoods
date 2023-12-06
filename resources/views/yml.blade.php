@@ -12,7 +12,7 @@
             <offers>
                 @foreach ($products as $product)
                     <offer id="{{ $product->id }}" available="{{ $product->availability == 0 ? 'false' : 'true' }}">
-                        <category_id>{{$product->category_id}}</category_id>
+                        <categoryId>{{$product->category_id}}</categoryId>
                         <price>{{ $product->price->amount }}</price>
                         <currencyId>RUB</currencyId>
                         <picture>{{ $product->thumb_photo }}</picture>
