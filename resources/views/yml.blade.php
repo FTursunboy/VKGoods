@@ -1,6 +1,10 @@
 
 <?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
-<yml_catalog  >
+@php
+    $date = now()->format('Y-m-d\TH:iP');
+@endphp
+
+<yml_catalog date="{{$date}}" >
         <shop>
             <categories>
                 @foreach($categories as $category)
@@ -12,8 +16,9 @@
             <offers>
                 @foreach ($products as $product)
                     <offer id="{{ $product->id }}" available="{{ $product->availability == 0 ? 'false' : 'true' }}">
+                        <version>1.0</version>
                         <categoryId>{{$product->category_id}}</categoryId>
-                        <price>{{ $product->price->amount }}</price>
+                        <price>{{ $product->price->amount / 100  }}</price>
                         <currencyId>RUB</currencyId>
                         <picture>{{ $product->thumb_photo }}</picture>
                         <name>{{ $product->title }}</name>

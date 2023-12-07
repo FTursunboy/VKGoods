@@ -28,11 +28,11 @@ class GoodController extends Controller
         $goods = Good::paginate(20);
         $categories = Category::all();
         $content = View::make('yml', compact('goods', 'products','categories'))->render();
-// Запись содержимого в файлы
+
         file_put_contents(storage_path('app/public/goods.yml'), $content);
         file_put_contents(storage_path('app/public/goods.xml'), $content);
 
-// Создание ссылок вручную
+
         $baseURL = 'https://billing.taskpro.tj/VKGoods/public/storage/';
         $yml = $baseURL . 'goods.yml';
         $xml = $baseURL . 'goods.xml';
