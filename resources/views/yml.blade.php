@@ -20,7 +20,7 @@
                         <categoryId>{{$product->category_id}}</categoryId>
                         <price>{{ $product->price->amount / 100  }}</price>
                         <currencyId>RUB</currencyId>
-                        <picture>{{ $product->thumb_photo }}</picture>
+                        <picture>{{ $product->thumb_photo . ".jpg" }}</picture>
                         <name>{{ $product->title }}</name>
                         <description><![CDATA[{{ $product->description }}]]></description>
                     </offer>
