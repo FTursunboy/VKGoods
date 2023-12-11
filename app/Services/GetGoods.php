@@ -17,40 +17,36 @@ class GetGoods
 {
     public function getToken() {
 
-        $clientId = '51797475';
-        $clientSecret = 'vk1.a.3CJJylQcILEqjyortfCFftnll8aBUsqRKoAgCDBBN-fFej_8iE13L9YzSOdhN9NJ5wgDdwK9_GJD8mR2o3MJSlQMT1z_jDKdg9zAS6-PpWHvDQ-kNpfFzcI66bbavzXPBYZyhM4FRl3JsPz77a7PXWRPtLZ_KxA7GGk0GywImLyGg2xSMgr8a6yvEWBTKbRCO-9_uJ5ds2hd95pLG_6DVw';
-        $redirectUri = 'https%3A%2F%2Foauth.vk.com%2Fblank.html';
-
-        $accessToken = env('VK_ACCESS_TOKEN');
-
-        if (empty($accessToken)) {
-            // Если его нет, инициируем процесс авторизации
-            if (!isset($_GET['code'])) {
-                $authUrl = "https://oauth.vk.com/authorize?client_id={$clientId}&scope=market&redirect_uri={$redirectUri}&response_type=code";
 
 
-                header("Location: $authUrl");
+            public function makeRequest()
+            {
+                $ipAddress = '185.114.245.107';
+                $url = 'https://oauth.vk.com/authorize?client_id=51797475&scope=market&response_type=token';
 
-                exit;
-            } else {
+                // Создаем экземпляр Guzzle клиента
+                $client = new Client([
+                    'base_uri' => $url,
+                    'curl' => [CURLOPT_INTERFACE => $ipAddress],
+                ]);
 
-                $code = $_GET['code'];
-                $tokenUrl = "https://oauth.vk.com/access_token?client_id={$clientId}&client_secret={$clientSecret}&redirect_uri={$redirectUri}&code={$code}";
+                try {
+                    // Отправляем GET-запрос
+                    $response = $client->request('GET');
 
-                $client = new Client();
-                $response = $client->get($tokenUrl);
-                $data = json_decode($response->getBody(), true);
-                dd($data);
-                // Сохраняем access token в .env
-                file_put_contents('.env', PHP_EOL . "VK_ACCESS_TOKEN={$data['access_token']}", FILE_APPEND);
+                    // Получаем тело ответа
+                    $body = $response->getBody()->getContents();
 
-
-                header("Location: /");
-                exit;
+                    dd($body);
+                    echo $body;
+                } catch (\Exception $e) {
+                    // Обрабатываем ошибку, если есть
+                    echo 'Error: ' . $e->getMessage();
+                }
             }
         }
 
-    }
+
 
     public function connect()
     {
