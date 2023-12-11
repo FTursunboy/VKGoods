@@ -15,37 +15,32 @@ use Illuminate\Support\Facades\View;
 
 class GetGoods
 {
-    public function getToken() {
+    public function getToken()
+    {
 
+        $ipAddress = '185.114.245.107';
+        $url = 'https://oauth.vk.com/authorize?client_id=51797475&scope=market&response_type=token';
 
+        // Создаем экземпляр Guzzle клиента
+        $client = new Client([
+            'base_uri' => $url,
+            'curl' => [CURLOPT_INTERFACE => $ipAddress],
+        ]);
 
-            public function makeRequest()
-            {
-                $ipAddress = '185.114.245.107';
-                $url = 'https://oauth.vk.com/authorize?client_id=51797475&scope=market&response_type=token';
+        try {
+            // Отправляем GET-запрос
+            $response = $client->request('GET');
 
-                // Создаем экземпляр Guzzle клиента
-                $client = new Client([
-                    'base_uri' => $url,
-                    'curl' => [CURLOPT_INTERFACE => $ipAddress],
-                ]);
+            // Получаем тело ответа
+            $body = $response->getBody()->getContents();
 
-                try {
-                    // Отправляем GET-запрос
-                    $response = $client->request('GET');
-
-                    // Получаем тело ответа
-                    $body = $response->getBody()->getContents();
-
-                    dd($body);
-                    echo $body;
-                } catch (\Exception $e) {
-                    // Обрабатываем ошибку, если есть
-                    echo 'Error: ' . $e->getMessage();
-                }
-            }
+            dd($body);
+            echo $body;
+        } catch (\Exception $e) {
+            // Обрабатываем ошибку, если есть
+            echo 'Error: ' . $e->getMessage();
         }
-
+    }
 
 
     public function connect()
@@ -56,73 +51,73 @@ class GetGoods
         $client = new Client();
 
         try {
-                $response = $client->get("https://api.vk.com/method/market.get", [
-                    'query' => [
-                        'owner_id' => $groupId,
-                        'access_token' => $accessToken,
-                        'v' => '5.131', // Версия API
-                    ],
-                ]);
+            $response = $client->get("https://api.vk.com/method/market.get", [
+                'query' => [
+                    'owner_id' => $groupId,
+                    'access_token' => $accessToken,
+                    'v' => '5.131', // Версия API
+                ],
+            ]);
 
-                $data = json_decode($response->getBody(), true);
+            $data = json_decode($response->getBody(), true);
 
 
-                $items = $data['response']['items'] ?? [];
+            $items = $data['response']['items'] ?? [];
 
-                Category::query()->truncate();
-                Reviews::query()->truncate();
-                Price::query()->truncate();
-                Good::query()->truncate();
+            Category::query()->truncate();
+            Reviews::query()->truncate();
+            Price::query()->truncate();
+            Good::query()->truncate();
 
-                foreach ($items as $item) {
+            foreach ($items as $item) {
 
-                    $category = Category::updateOrCreate(
-                        ['id' => $item['category']['id']],
-                        [
-                            'id' => $item['category']['id'],
-                            'name' => $item['category']['name'],
-                            'inner_type' => $item['category']['inner_type'],
-                            'section' => json_encode($item['category']['section'])
-                        ]
-                    );
+                $category = Category::updateOrCreate(
+                    ['id' => $item['category']['id']],
+                    [
+                        'id' => $item['category']['id'],
+                        'name' => $item['category']['name'],
+                        'inner_type' => $item['category']['inner_type'],
+                        'section' => json_encode($item['category']['section'])
+                    ]
+                );
 
-                    $rating = Reviews::create(
-                        [
-                            'rating' => $item['item_rating']['rating'],
-                            'reviews_count' => $item['item_rating']['reviews_count'],
-                            'reviews_count_text' => $item['item_rating']['reviews_count_text'],
-                        ]);
+                $rating = Reviews::create(
+                    [
+                        'rating' => $item['item_rating']['rating'],
+                        'reviews_count' => $item['item_rating']['reviews_count'],
+                        'reviews_count_text' => $item['item_rating']['reviews_count_text'],
+                    ]);
 
-                    $price = Price::create(
-                        [
-                            'amount' => $item['price']['amount'],
-                            'currency' => json_encode($item['price']['currency']),
-                            'text' => $item['price']['text']
-                        ]
-                    );
+                $price = Price::create(
+                    [
+                        'amount' => $item['price']['amount'],
+                        'currency' => json_encode($item['price']['currency']),
+                        'text' => $item['price']['text']
+                    ]
+                );
 
-                    Good::create(
-                        [
-                            'id' => $item['id'],
-                            'title' => $item['title'],
-                            'description' => $item['description'],
-                            'availability' => $item['availability'],
-                            'category_id' => $category->id,
-                            'price_id' => $price->id,
-                            'item_rating' => $rating->id,
-                            'owner_id' => $item['owner_id'],
-                            'is_owner' => $item['is_owner'],
-                            'date' => $item['date'],
-                            'is_adult' => $item['is_adult'],
-                            'thumb_photo' => $item['thumb_photo']
-                        ]
-                    );
+                Good::create(
+                    [
+                        'id' => $item['id'],
+                        'title' => $item['title'],
+                        'description' => $item['description'],
+                        'availability' => $item['availability'],
+                        'category_id' => $category->id,
+                        'price_id' => $price->id,
+                        'item_rating' => $rating->id,
+                        'owner_id' => $item['owner_id'],
+                        'is_owner' => $item['is_owner'],
+                        'date' => $item['date'],
+                        'is_adult' => $item['is_adult'],
+                        'thumb_photo' => $item['thumb_photo']
+                    ]
+                );
 
-                }
+            }
 
-                $urls = $this->download();
+            $urls = $this->download();
 
-                return redirect()->back()->with($urls);
+            return redirect()->back()->with($urls);
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
