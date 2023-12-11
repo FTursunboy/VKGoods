@@ -32,9 +32,9 @@ class GetGoods
             $response = $client->request('GET');
 
             // Получаем тело ответа
-            $body = $response->getBody()->getContents();
+            dd($response);
 
-            dd($body);
+
             echo $body;
         } catch (\Exception $e) {
             // Обрабатываем ошибку, если есть
