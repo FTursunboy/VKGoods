@@ -17,7 +17,7 @@ class GetGoods
 {
     public function getToken() {
 
-        $clientId = '-197845770';
+        $clientId = '51797475';
         $clientSecret = 'vk1.a.3CJJylQcILEqjyortfCFftnll8aBUsqRKoAgCDBBN-fFej_8iE13L9YzSOdhN9NJ5wgDdwK9_GJD8mR2o3MJSlQMT1z_jDKdg9zAS6-PpWHvDQ-kNpfFzcI66bbavzXPBYZyhM4FRl3JsPz77a7PXWRPtLZ_KxA7GGk0GywImLyGg2xSMgr8a6yvEWBTKbRCO-9_uJ5ds2hd95pLG_6DVw';
         $redirectUri = 'http://billing.taskpro.tj/VKGoods/public/';
 
