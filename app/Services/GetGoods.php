@@ -30,6 +30,7 @@ class GetGoods
 
 
                 header("Location: $authUrl");
+
                 exit;
             } else {
 
@@ -39,7 +40,7 @@ class GetGoods
                 $client = new Client();
                 $response = $client->get($tokenUrl);
                 $data = json_decode($response->getBody(), true);
-
+                dd($data);
                 // Сохраняем access token в .env
                 file_put_contents('.env', PHP_EOL . "VK_ACCESS_TOKEN={$data['access_token']}", FILE_APPEND);
 
