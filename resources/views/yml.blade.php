@@ -22,7 +22,7 @@
                         <currencyId>RUB</currencyId>
                         <picture>{{ $product->thumb_photo . ".jpeg" }}</picture>
                         <name>{{ $product->title }}</name>
-                        <description><![CDATA[{{ $product->description }}]]></description>
+                        <description>{{ $product->description }}</description>
                     </offer>
                 @endforeach
             </offers>
