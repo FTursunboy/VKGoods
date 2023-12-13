@@ -9,6 +9,7 @@ use App\Models\Price;
 use App\Models\Reviews;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
@@ -45,8 +46,8 @@ class GetGoods
 
     public function connect()
     {
-        $accessToken = env('VK_ACCESS_TOKEN');
-        $groupId = env('VK_GROUP_ID');
+        $accessToken = "vk1.a.2IfaD0Xq5XEozybwc0ZkrDISf6h3yQ0rS0X3ctn1go60lGwzkc3p3TqFv1-EGVLINzzuGNAn_8DrY84HCgGvnmahL1tRvV5UZxVENNSCJO9YOIXJyPUG3VeLMsWYL5EzUb0QfVr0BSeNdLLCjrp6k0F35bWQEn-DoEhrKF_k0VjFsH6JY5UE1YB1KREt__jJOnhAw08QA1atp2lhi9QiKQ";
+        $groupId = "-197845770";
 
         $client = new Client();
 
@@ -96,22 +97,23 @@ class GetGoods
                     ]
                 );
 
-                Good::create(
-                    [
-                        'id' => $item['id'],
-                        'title' => $item['title'],
-                        'description' => $item['description'],
-                        'availability' => $item['availability'],
-                        'category_id' => $category->id,
-                        'price_id' => $price->id,
-                        'item_rating' => $rating->id,
-                        'owner_id' => $item['owner_id'],
-                        'is_owner' => $item['is_owner'],
-                        'date' => $item['date'],
-                        'is_adult' => $item['is_adult'],
-                        'thumb_photo' => $item['thumb_photo']
-                    ]
-                );
+                $image = $this->downloadAndSaveImage($item['thumb_photo']);
+
+                    Good::create(
+                        [
+                            'id' => $item['id'],
+                            'title' => $item['title'],
+                            'description' => $item['description'],
+                            'availability' => $item['availability'],
+                            'category_id' => $category->id,
+                            'price_id' => $price->id,
+                            'item_rating' => $rating->id,
+                            'owner_id' => $item['owner_id'],
+                            'is_owner' => $item['is_owner'],
+                            'is_adult' => $item['is_adult'],
+                            'thumb_photo' => $image
+                        ]
+                    );
 
             }
 
@@ -123,6 +125,30 @@ class GetGoods
         }
     }
 
+    public function downloadAndSaveImage($imageUrl)
+    {
+        // URL картинки
+
+        // Загрузка изображения
+        $response = Http::get($imageUrl);
+
+        if ($response->successful()) {
+
+
+            $imageName = basename($imageUrl);
+
+            dd($response->body());
+
+            Storage::disk('public')->put('images/' . $imageName, $response->body());
+
+                  $imagePath = storage_path('app/images/' . $imageName);
+
+
+            return $imagePath;
+        } else {
+            return response()->json(['message' => 'Не удалось загрузить изображение'], 500);
+        }
+    }
 
     public function returnGoods()
     {

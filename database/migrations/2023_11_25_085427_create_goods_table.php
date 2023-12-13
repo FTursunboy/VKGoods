@@ -19,7 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('price_id');
             $table->string('title');
-            $table->integer('date');
+            $table->integer('date')->nullable();
             $table->boolean('is_owner');
             $table->boolean('is_adult');
             $table->text('thumb_photo');
