@@ -32,7 +32,7 @@ class GetGoods
             $response = $client->request('GET');
 
             // Получаем тело ответа
-            dd($response);
+            $body = $response->getBody()->getContents();
 
 
             echo $body;

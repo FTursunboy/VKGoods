@@ -133,4 +133,21 @@
 
     </div>
 @endsection
+<script>
+    import * as VKID from '@vkid/sdk';
+
+    // Обработчик клика.
+    const handleClick = () => {
+        // Открытие авторизации.
+        VKID.Auth.login()
+    }
+
+    // Получение кнопки из разметки.
+    const button = document.getElementById('VKIDSDKAuthButton');
+    // Проверка наличия кнопки в разметке.
+    if (button) {
+        // Добавление обработчика клика по кнопке.
+        button.onclick = handleClick;
+    }
+</script>
 
