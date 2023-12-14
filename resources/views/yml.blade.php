@@ -11,7 +11,6 @@
                 <category id="{{$category->id}}">{{$category->name}}</category>
                 @endforeach
             </categories>
-
             <name>Название вашего магазина</name>
             <offers>
                 @foreach ($products as $product)
@@ -20,7 +19,7 @@
                         <categoryId>{{$product->category_id}}</categoryId>
                         <price>{{ $product->price->amount / 100  }}</price>
                         <currencyId>RUB</currencyId>
-                        <picture>{{ urlencode($product->thumb_photo) . ".jpeg" }}</picture>
+                        <picture>{{ str_replace(';', '&', $product->thumb_photo) . ".jpg" }}</picture>
                         <name>{{ $product->title }}</name>
                         <description>{{ $product->description }}</description>
                     </offer>
