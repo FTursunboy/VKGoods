@@ -20,7 +20,7 @@
                         <categoryId>{{$product->category_id}}</categoryId>
                         <price>{{ $product->price->amount / 100  }}</price>
                         <currencyId>RUB</currencyId>
-                        <picture>{{ $product->thumb_photo . ".jpeg" }}</picture>
+                        <picture>{{ urlencode($product->thumb_photo) . ".jpeg" }}</picture>
                         <name>{{ $product->title }}</name>
                         <description>{{ $product->description }}</description>
                     </offer>
