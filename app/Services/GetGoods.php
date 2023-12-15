@@ -46,7 +46,7 @@ class GetGoods
 
     public function connect()
     {
-        $accessToken = "vk1.a.2IfaD0Xq5XEozybwc0ZkrDISf6h3yQ0rS0X3ctn1go60lGwzkc3p3TqFv1-EGVLINzzuGNAn_8DrY84HCgGvnmahL1tRvV5UZxVENNSCJO9YOIXJyPUG3VeLMsWYL5EzUb0QfVr0BSeNdLLCjrp6k0F35bWQEn-DoEhrKF_k0VjFsH6JY5UE1YB1KREt__jJOnhAw08QA1atp2lhi9QiKQ";
+        $accessToken = "vk1.a.e3lafK63auDzS8zbScfSFVmooURgAIlst5Eb3NqItp3Dc3Bo7n6xpKBbhxbYjkAW4gy_e7vTypwWThBP5ykkKyhj2hf2Z2gRNde5uu3EFqYxqh1OaHtmLDUItlshPAiR96zIeFqmwhoc4rlco-3kXXwd4FIdgXLkjWEfNZo9qrPG-BIcRxqPJ6IOjbyzSYw9B_K_Xn0ZvJfnn142qP3mFw";
         $groupId = "-197845770";
 
         $client = new Client();
@@ -59,16 +59,16 @@ class GetGoods
                     'v' => '5.131', // Версия API
                 ],
             ]);
-
             $data = json_decode($response->getBody(), true);
-
+            dump($data);
 
             $items = $data['response']['items'] ?? [];
-
+            dd($items);
             Category::query()->truncate();
             Reviews::query()->truncate();
             Price::query()->truncate();
             Good::query()->truncate();
+
 
             foreach ($items as $item) {
 
@@ -97,23 +97,22 @@ class GetGoods
                     ]
                 );
 
-                $image = $this->downloadAndSaveImage($item['thumb_photo']);
-
-                    Good::create(
-                        [
-                            'id' => $item['id'],
-                            'title' => $item['title'],
-                            'description' => $item['description'],
-                            'availability' => $item['availability'],
-                            'category_id' => $category->id,
-                            'price_id' => $price->id,
-                            'item_rating' => $rating->id,
-                            'owner_id' => $item['owner_id'],
-                            'is_owner' => $item['is_owner'],
-                            'is_adult' => $item['is_adult'],
-                            'thumb_photo' => $image
-                        ]
-                    );
+                $image = $this->uploadToImgBB($item['thumb_photo']);
+                Good::create(
+                    [
+                        'id' => $item['id'],
+                        'title' => $item['title'],
+                        'description' => $item['description'],
+                        'availability' => $item['availability'],
+                        'category_id' => $category->id,
+                        'price_id' => $price->id,
+                        'item_rating' => $rating->id,
+                        'owner_id' => $item['owner_id'],
+                        'is_owner' => $item['is_owner'],
+                        'is_adult' => $item['is_adult'],
+                        'thumb_photo' => $image
+                    ]
+                );
 
             }
 
@@ -125,30 +124,49 @@ class GetGoods
         }
     }
 
-    public function downloadAndSaveImage($imageUrl)
-    {
-        // URL картинки
 
-        // Загрузка изображения
-        $response = Http::get($imageUrl);
+    public function changeUrl() {
+        $goods = Good::where('item_rating', 36)->get();
 
-        if ($response->successful()) {
-
-
-            $imageName = basename($imageUrl);
-
-            dd($response->body());
-
-            Storage::disk('public')->put('images/' . $imageName, $response->body());
-
-                  $imagePath = storage_path('app/images/' . $imageName);
-
-
-            return $imagePath;
-        } else {
-            return response()->json(['message' => 'Не удалось загрузить изображение'], 500);
+        foreach ($goods as $good) {
+            $good->thumb_photo = $this->uploadToImgBB($good->thumb_photo);
+            $good->save();
         }
     }
+
+    function uploadToImgBB($imagePath)
+    {
+        $apiKey = 'f910cf951d7436b2aa8dd9e44ec166b2'; // Замени на свой API ключ от ImgBB
+        $apiEndpoint = 'https://api.imgbb.com/1/upload?expiration=600&key=' . $apiKey;
+
+        $fileData = file_get_contents($imagePath);
+        $base64Image = base64_encode($fileData);
+
+        $postData = [
+            'image' => $base64Image,
+        ];
+
+        $ch = curl_init($apiEndpoint);
+
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec($ch);
+
+        curl_close($ch);
+
+        $responseData = json_decode($response, true);
+
+        if (isset($responseData['data']['url'])) {
+            return $responseData['data']['url'];
+        } else {
+            dd(1);
+        }
+    }
+
+
+
 
     public function returnGoods()
     {

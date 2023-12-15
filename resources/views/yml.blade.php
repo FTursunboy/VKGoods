@@ -19,7 +19,7 @@
                         <categoryId>{{$product->category_id}}</categoryId>
                         <price>{{ $product->price->amount / 100  }}</price>
                         <currencyId>RUB</currencyId>
-                        <picture>{{ str_replace('&amp', '&', $product->thumb_photo) . ".jpg" }}</picture>
+                        <picture>{{ $product->thumb_photo }}</picture>
                         <name>{{ $product->title }}</name>
                         <description>{{ $product->description }}</description>
                     </offer>
