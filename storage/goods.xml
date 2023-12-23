@@ -105,7 +105,7 @@
 
             <name>Название вашего магазина</name>
             <offers>
-                                    <offer id="8591302" available="false">
+                                    <offer id="8591302" available="true">
                         <category_id>1</category_id>
                         <price>120000</price>
                         <currencyId>RUB</currencyId>
@@ -115,7 +115,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8591299" available="false">
+                                    <offer id="8591299" available="true">
                         <category_id>2</category_id>
                         <price>800000</price>
                         <currencyId>RUB</currencyId>
@@ -125,7 +125,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8591291" available="false">
+                                    <offer id="8591291" available="true">
                         <category_id>3</category_id>
                         <price>5499000</price>
                         <currencyId>RUB</currencyId>
@@ -135,7 +135,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8589295" available="false">
+                                    <offer id="8589295" available="true">
                         <category_id>4</category_id>
                         <price>19000</price>
                         <currencyId>RUB</currencyId>
@@ -145,7 +145,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589209" available="false">
+                                    <offer id="8589209" available="true">
                         <category_id>5</category_id>
                         <price>1349900</price>
                         <currencyId>RUB</currencyId>
@@ -155,7 +155,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589195" available="false">
+                                    <offer id="8589195" available="true">
                         <category_id>6</category_id>
                         <price>13499000</price>
                         <currencyId>RUB</currencyId>
@@ -165,7 +165,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589181" available="false">
+                                    <offer id="8589181" available="true">
                         <category_id>7</category_id>
                         <price>1149900</price>
                         <currencyId>RUB</currencyId>
@@ -175,7 +175,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589165" available="false">
+                                    <offer id="8589165" available="true">
                         <category_id>8</category_id>
                         <price>12499000</price>
                         <currencyId>RUB</currencyId>
@@ -185,7 +185,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589152" available="false">
+                                    <offer id="8589152" available="true">
                         <category_id>9</category_id>
                         <price>11499000</price>
                         <currencyId>RUB</currencyId>
@@ -195,7 +195,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589130" available="false">
+                                    <offer id="8589130" available="true">
                         <category_id>10</category_id>
                         <price>9099000</price>
                         <currencyId>RUB</currencyId>
@@ -205,7 +205,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589124" available="false">
+                                    <offer id="8589124" available="true">
                         <category_id>11</category_id>
                         <price>9099000</price>
                         <currencyId>RUB</currencyId>
@@ -215,7 +215,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8589067" available="false">
+                                    <offer id="8589067" available="true">
                         <category_id>12</category_id>
                         <price>1299000</price>
                         <currencyId>RUB</currencyId>
@@ -225,7 +225,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588321" available="false">
+                                    <offer id="8588321" available="true">
                         <category_id>13</category_id>
                         <price>1299000</price>
                         <currencyId>RUB</currencyId>
@@ -235,7 +235,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588320" available="false">
+                                    <offer id="8588320" available="true">
                         <category_id>14</category_id>
                         <price>1099000</price>
                         <currencyId>RUB</currencyId>
@@ -245,7 +245,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588319" available="false">
+                                    <offer id="8588319" available="true">
                         <category_id>15</category_id>
                         <price>7799000</price>
                         <currencyId>RUB</currencyId>
@@ -255,7 +255,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588318" available="false">
+                                    <offer id="8588318" available="true">
                         <category_id>16</category_id>
                         <price>6299000</price>
                         <currencyId>RUB</currencyId>
@@ -265,7 +265,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588317" available="false">
+                                    <offer id="8588317" available="true">
                         <category_id>17</category_id>
                         <price>6299000</price>
                         <currencyId>RUB</currencyId>
@@ -275,7 +275,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588307" available="false">
+                                    <offer id="8588307" available="true">
                         <category_id>18</category_id>
                         <price>5299000</price>
                         <currencyId>RUB</currencyId>
@@ -285,7 +285,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588306" available="false">
+                                    <offer id="8588306" available="true">
                         <category_id>19</category_id>
                         <price>5299000</price>
                         <currencyId>RUB</currencyId>
@@ -295,7 +295,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588305" available="false">
+                                    <offer id="8588305" available="true">
                         <category_id>20</category_id>
                         <price>5999000</price>
                         <currencyId>RUB</currencyId>
@@ -305,7 +305,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588304" available="false">
+                                    <offer id="8588304" available="true">
                         <category_id>21</category_id>
                         <price>5499000</price>
                         <currencyId>RUB</currencyId>
@@ -315,7 +315,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588303" available="false">
+                                    <offer id="8588303" available="true">
                         <category_id>22</category_id>
                         <price>5999000</price>
                         <currencyId>RUB</currencyId>
@@ -325,7 +325,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588297" available="false">
+                                    <offer id="8588297" available="true">
                         <category_id>23</category_id>
                         <price>5499000</price>
                         <currencyId>RUB</currencyId>
@@ -335,7 +335,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588293" available="false">
+                                    <offer id="8588293" available="true">
                         <category_id>24</category_id>
                         <price>4799000</price>
                         <currencyId>RUB</currencyId>
@@ -345,7 +345,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588292" available="false">
+                                    <offer id="8588292" available="true">
                         <category_id>25</category_id>
                         <price>4999000</price>
                         <currencyId>RUB</currencyId>
@@ -355,7 +355,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588291" available="false">
+                                    <offer id="8588291" available="true">
                         <category_id>26</category_id>
                         <price>4799000</price>
                         <currencyId>RUB</currencyId>
@@ -365,7 +365,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588290" available="false">
+                                    <offer id="8588290" available="true">
                         <category_id>27</category_id>
                         <price>8499000</price>
                         <currencyId>RUB</currencyId>
@@ -375,7 +375,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588288" available="false">
+                                    <offer id="8588288" available="true">
                         <category_id>28</category_id>
                         <price>4199000</price>
                         <currencyId>RUB</currencyId>
@@ -385,7 +385,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588286" available="false">
+                                    <offer id="8588286" available="true">
                         <category_id>29</category_id>
                         <price>3699000</price>
                         <currencyId>RUB</currencyId>
@@ -395,7 +395,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588282" available="false">
+                                    <offer id="8588282" available="true">
                         <category_id>30</category_id>
                         <price>3699000</price>
                         <currencyId>RUB</currencyId>
@@ -405,7 +405,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588269" available="false">
+                                    <offer id="8588269" available="true">
                         <category_id>31</category_id>
                         <price>2799000</price>
                         <currencyId>RUB</currencyId>
@@ -415,7 +415,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8588268" available="false">
+                                    <offer id="8588268" available="true">
                         <category_id>32</category_id>
                         <price>2799000</price>
                         <currencyId>RUB</currencyId>
@@ -425,7 +425,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588265" available="false">
+                                    <offer id="8588265" available="true">
                         <category_id>33</category_id>
                         <price>2799000</price>
                         <currencyId>RUB</currencyId>
@@ -435,7 +435,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588258" available="false">
+                                    <offer id="8588258" available="true">
                         <category_id>34</category_id>
                         <price>2349000</price>
                         <currencyId>RUB</currencyId>
@@ -445,7 +445,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588251" available="false">
+                                    <offer id="8588251" available="true">
                         <category_id>35</category_id>
                         <price>6199000</price>
                         <currencyId>RUB</currencyId>
@@ -455,7 +455,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588249" available="false">
+                                    <offer id="8588249" available="true">
                         <category_id>36</category_id>
                         <price>6199000</price>
                         <currencyId>RUB</currencyId>
@@ -465,7 +465,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588248" available="false">
+                                    <offer id="8588248" available="true">
                         <category_id>37</category_id>
                         <price>6199000</price>
                         <currencyId>RUB</currencyId>
@@ -475,7 +475,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588247" available="false">
+                                    <offer id="8588247" available="true">
                         <category_id>38</category_id>
                         <price>6199000</price>
                         <currencyId>RUB</currencyId>
@@ -485,7 +485,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588245" available="false">
+                                    <offer id="8588245" available="true">
                         <category_id>39</category_id>
                         <price>1799000</price>
                         <currencyId>RUB</currencyId>
@@ -495,7 +495,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8588234" available="false">
+                                    <offer id="8588234" available="true">
                         <category_id>40</category_id>
                         <price>1249000</price>
                         <currencyId>RUB</currencyId>
@@ -505,7 +505,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8581220" available="false">
+                                    <offer id="8581220" available="true">
                         <category_id>41</category_id>
                         <price>9899000</price>
                         <currencyId>RUB</currencyId>
@@ -515,7 +515,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581213" available="false">
+                                    <offer id="8581213" available="true">
                         <category_id>42</category_id>
                         <price>9899000</price>
                         <currencyId>RUB</currencyId>
@@ -525,7 +525,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581194" available="false">
+                                    <offer id="8581194" available="true">
                         <category_id>43</category_id>
                         <price>9899000</price>
                         <currencyId>RUB</currencyId>
@@ -535,7 +535,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581193" available="false">
+                                    <offer id="8581193" available="true">
                         <category_id>44</category_id>
                         <price>9899000</price>
                         <currencyId>RUB</currencyId>
@@ -545,7 +545,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581176" available="false">
+                                    <offer id="8581176" available="true">
                         <category_id>45</category_id>
                         <price>9899000</price>
                         <currencyId>RUB</currencyId>
@@ -555,7 +555,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581171" available="false">
+                                    <offer id="8581171" available="true">
                         <category_id>46</category_id>
                         <price>8999000</price>
                         <currencyId>RUB</currencyId>
@@ -565,7 +565,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581155" available="false">
+                                    <offer id="8581155" available="true">
                         <category_id>47</category_id>
                         <price>8999000</price>
                         <currencyId>RUB</currencyId>
@@ -575,7 +575,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581135" available="false">
+                                    <offer id="8581135" available="true">
                         <category_id>48</category_id>
                         <price>8999000</price>
                         <currencyId>RUB</currencyId>
@@ -585,7 +585,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581114" available="false">
+                                    <offer id="8581114" available="true">
                         <category_id>49</category_id>
                         <price>8999000</price>
                         <currencyId>RUB</currencyId>
@@ -595,7 +595,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8581088" available="false">
+                                    <offer id="8581088" available="true">
                         <category_id>50</category_id>
                         <price>8999000</price>
                         <currencyId>RUB</currencyId>
@@ -605,7 +605,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8580936" available="false">
+                                    <offer id="8580936" available="true">
                         <category_id>51</category_id>
                         <price>12699000</price>
                         <currencyId>RUB</currencyId>
@@ -615,7 +615,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8580918" available="false">
+                                    <offer id="8580918" available="true">
                         <category_id>52</category_id>
                         <price>12699000</price>
                         <currencyId>RUB</currencyId>
@@ -625,7 +625,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8580916" available="false">
+                                    <offer id="8580916" available="true">
                         <category_id>53</category_id>
                         <price>12699000</price>
                         <currencyId>RUB</currencyId>
@@ -635,7 +635,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8580875" available="false">
+                                    <offer id="8580875" available="true">
                         <category_id>54</category_id>
                         <price>12699000</price>
                         <currencyId>RUB</currencyId>
@@ -645,7 +645,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8580698" available="false">
+                                    <offer id="8580698" available="true">
                         <category_id>55</category_id>
                         <price>9399000</price>
                         <currencyId>RUB</currencyId>
@@ -655,7 +655,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579465" available="false">
+                                    <offer id="8579465" available="true">
                         <category_id>56</category_id>
                         <price>11999000</price>
                         <currencyId>RUB</currencyId>
@@ -665,7 +665,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579446" available="false">
+                                    <offer id="8579446" available="true">
                         <category_id>57</category_id>
                         <price>11999000</price>
                         <currencyId>RUB</currencyId>
@@ -675,7 +675,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579433" available="false">
+                                    <offer id="8579433" available="true">
                         <category_id>58</category_id>
                         <price>11999000</price>
                         <currencyId>RUB</currencyId>
@@ -685,7 +685,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579422" available="false">
+                                    <offer id="8579422" available="true">
                         <category_id>59</category_id>
                         <price>11999000</price>
                         <currencyId>RUB</currencyId>
@@ -695,7 +695,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579330" available="false">
+                                    <offer id="8579330" available="true">
                         <category_id>60</category_id>
                         <price>9399000</price>
                         <currencyId>RUB</currencyId>
@@ -705,7 +705,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579327" available="false">
+                                    <offer id="8579327" available="true">
                         <category_id>61</category_id>
                         <price>9399000</price>
                         <currencyId>RUB</currencyId>
@@ -715,7 +715,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579308" available="false">
+                                    <offer id="8579308" available="true">
                         <category_id>62</category_id>
                         <price>9399000</price>
                         <currencyId>RUB</currencyId>
@@ -725,7 +725,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579305" available="false">
+                                    <offer id="8579305" available="true">
                         <category_id>63</category_id>
                         <price>7699000</price>
                         <currencyId>RUB</currencyId>
@@ -735,7 +735,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579303" available="false">
+                                    <offer id="8579303" available="true">
                         <category_id>64</category_id>
                         <price>7699000</price>
                         <currencyId>RUB</currencyId>
@@ -745,7 +745,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579302" available="false">
+                                    <offer id="8579302" available="true">
                         <category_id>65</category_id>
                         <price>7699000</price>
                         <currencyId>RUB</currencyId>
@@ -755,7 +755,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579284" available="false">
+                                    <offer id="8579284" available="true">
                         <category_id>66</category_id>
                         <price>7699000</price>
                         <currencyId>RUB</currencyId>
@@ -765,7 +765,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579279" available="false">
+                                    <offer id="8579279" available="true">
                         <category_id>67</category_id>
                         <price>8299000</price>
                         <currencyId>RUB</currencyId>
@@ -775,7 +775,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579273" available="false">
+                                    <offer id="8579273" available="true">
                         <category_id>68</category_id>
                         <price>8299000</price>
                         <currencyId>RUB</currencyId>
@@ -785,7 +785,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579272" available="false">
+                                    <offer id="8579272" available="true">
                         <category_id>69</category_id>
                         <price>8299000</price>
                         <currencyId>RUB</currencyId>
@@ -795,7 +795,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579266" available="false">
+                                    <offer id="8579266" available="true">
                         <category_id>70</category_id>
                         <price>6999000</price>
                         <currencyId>RUB</currencyId>
@@ -805,7 +805,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579261" available="false">
+                                    <offer id="8579261" available="true">
                         <category_id>71</category_id>
                         <price>6999000</price>
                         <currencyId>RUB</currencyId>
@@ -815,7 +815,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579247" available="false">
+                                    <offer id="8579247" available="true">
                         <category_id>72</category_id>
                         <price>6999000</price>
                         <currencyId>RUB</currencyId>
@@ -825,7 +825,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579244" available="false">
+                                    <offer id="8579244" available="true">
                         <category_id>73</category_id>
                         <price>6999000</price>
                         <currencyId>RUB</currencyId>
@@ -835,7 +835,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579240" available="false">
+                                    <offer id="8579240" available="true">
                         <category_id>74</category_id>
                         <price>6999000</price>
                         <currencyId>RUB</currencyId>
@@ -845,7 +845,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579227" available="false">
+                                    <offer id="8579227" available="true">
                         <category_id>75</category_id>
                         <price>5899000</price>
                         <currencyId>RUB</currencyId>
@@ -855,7 +855,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579224" available="false">
+                                    <offer id="8579224" available="true">
                         <category_id>76</category_id>
                         <price>5899000</price>
                         <currencyId>RUB</currencyId>
@@ -865,7 +865,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца. ]]></description>
                     </offer>
-                                    <offer id="8579219" available="false">
+                                    <offer id="8579219" available="true">
                         <category_id>77</category_id>
                         <price>19699000</price>
                         <currencyId>RUB</currencyId>
@@ -875,7 +875,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579217" available="false">
+                                    <offer id="8579217" available="true">
                         <category_id>78</category_id>
                         <price>15999000</price>
                         <currencyId>RUB</currencyId>
@@ -885,7 +885,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579206" available="false">
+                                    <offer id="8579206" available="true">
                         <category_id>79</category_id>
                         <price>13999000</price>
                         <currencyId>RUB</currencyId>
@@ -895,7 +895,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8579200" available="false">
+                                    <offer id="8579200" available="true">
                         <category_id>80</category_id>
                         <price>10999000</price>
                         <currencyId>RUB</currencyId>
@@ -905,7 +905,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570954" available="false">
+                                    <offer id="8570954" available="true">
                         <category_id>81</category_id>
                         <price>19699000</price>
                         <currencyId>RUB</currencyId>
@@ -915,7 +915,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570931" available="false">
+                                    <offer id="8570931" available="true">
                         <category_id>82</category_id>
                         <price>20499000</price>
                         <currencyId>RUB</currencyId>
@@ -925,7 +925,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570904" available="false">
+                                    <offer id="8570904" available="true">
                         <category_id>83</category_id>
                         <price>20499000</price>
                         <currencyId>RUB</currencyId>
@@ -935,7 +935,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570883" available="false">
+                                    <offer id="8570883" available="true">
                         <category_id>84</category_id>
                         <price>15999000</price>
                         <currencyId>RUB</currencyId>
@@ -945,7 +945,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570860" available="false">
+                                    <offer id="8570860" available="true">
                         <category_id>85</category_id>
                         <price>16999000</price>
                         <currencyId>RUB</currencyId>
@@ -955,7 +955,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570846" available="false">
+                                    <offer id="8570846" available="true">
                         <category_id>86</category_id>
                         <price>16999000</price>
                         <currencyId>RUB</currencyId>
@@ -965,7 +965,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570821" available="false">
+                                    <offer id="8570821" available="true">
                         <category_id>87</category_id>
                         <price>13999000</price>
                         <currencyId>RUB</currencyId>
@@ -975,7 +975,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570809" available="false">
+                                    <offer id="8570809" available="true">
                         <category_id>88</category_id>
                         <price>13999000</price>
                         <currencyId>RUB</currencyId>
@@ -985,7 +985,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570790" available="false">
+                                    <offer id="8570790" available="true">
                         <category_id>89</category_id>
                         <price>14499000</price>
                         <currencyId>RUB</currencyId>
@@ -995,7 +995,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570767" available="false">
+                                    <offer id="8570767" available="true">
                         <category_id>90</category_id>
                         <price>17499000</price>
                         <currencyId>RUB</currencyId>
@@ -1005,7 +1005,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570746" available="false">
+                                    <offer id="8570746" available="true">
                         <category_id>91</category_id>
                         <price>17499000</price>
                         <currencyId>RUB</currencyId>
@@ -1015,7 +1015,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570733" available="false">
+                                    <offer id="8570733" available="true">
                         <category_id>92</category_id>
                         <price>17499000</price>
                         <currencyId>RUB</currencyId>
@@ -1025,7 +1025,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570720" available="false">
+                                    <offer id="8570720" available="true">
                         <category_id>93</category_id>
                         <price>17499000</price>
                         <currencyId>RUB</currencyId>
@@ -1035,7 +1035,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570698" available="false">
+                                    <offer id="8570698" available="true">
                         <category_id>94</category_id>
                         <price>15499000</price>
                         <currencyId>RUB</currencyId>
@@ -1045,7 +1045,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570670" available="false">
+                                    <offer id="8570670" available="true">
                         <category_id>95</category_id>
                         <price>15499000</price>
                         <currencyId>RUB</currencyId>
@@ -1055,7 +1055,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570621" available="false">
+                                    <offer id="8570621" available="true">
                         <category_id>96</category_id>
                         <price>15499000</price>
                         <currencyId>RUB</currencyId>
@@ -1065,7 +1065,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570607" available="false">
+                                    <offer id="8570607" available="true">
                         <category_id>97</category_id>
                         <price>16499000</price>
                         <currencyId>RUB</currencyId>
@@ -1075,7 +1075,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570578" available="false">
+                                    <offer id="8570578" available="true">
                         <category_id>98</category_id>
                         <price>12799000</price>
                         <currencyId>RUB</currencyId>
@@ -1085,7 +1085,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570558" available="false">
+                                    <offer id="8570558" available="true">
                         <category_id>99</category_id>
                         <price>12799000</price>
                         <currencyId>RUB</currencyId>
@@ -1095,7 +1095,7 @@
 В нашем магазине вы можете приобрести оригинальную технику Apple и аксессуары для ваших устройств.
 Доступен кредит сроком до 36 месяцев с оплатой со второго месяца.]]></description>
                     </offer>
-                                    <offer id="8570539" available="false">
+                                    <offer id="8570539" available="true">
                         <category_id>100</category_id>
                         <price>12799000</price>
                         <currencyId>RUB</currencyId>
