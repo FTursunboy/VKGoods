@@ -18,6 +18,7 @@ Route::get('/yml', [\App\Http\Controllers\GoodController::class, 'download'])->n
 Route::post('/update/{good}', [\App\Http\Controllers\GoodController::class, 'update'])->name('update');
 Route::get('get/goods/service', [\App\Services\GetGoods::class, 'connect'])->name('get.goods');
 Route::get('change', [\App\Services\GetGoods::class, 'changeUrl'])->name('get');
+Route::get('change/avai', [\App\Services\GetGoods::class, 'changeAvailability']);
 Route::get('getToken', [\App\Services\GetGoods::class, 'getToken']);
 
 

@@ -125,47 +125,37 @@ class GetGoods
     }
 
 
-    public function changeUrl() {
-        $goods = Good::where('item_rating', 36)->get();
+    public function changeUrl()
+    {
+        $goods = Good::where('item_rating', '=', 54)->get();
 
         foreach ($goods as $good) {
-            $good->thumb_photo = $this->uploadToImgBB($good->thumb_photo);
+            $good->thumb_photo = $this->uploadToImgur($good->thumb_photo);
             $good->save();
+
         }
     }
 
-    function uploadToImgBB($imagePath)
+    function uploadToImgur($imagePath, $expirationSeconds = null)
     {
-        $apiKey = 'f910cf951d7436b2aa8dd9e44ec166b2'; // Замени на свой API ключ от ImgBB
-        $apiEndpoint = 'https://api.imgbb.com/1/upload?expiration=600&key=' . $apiKey;
+        $apiEndpoint = 'https://api.imgur.com/3/image';
 
         $fileData = file_get_contents($imagePath);
         $base64Image = base64_encode($fileData);
 
-        $postData = [
-            'image' => $base64Image,
-        ];
 
-        $ch = curl_init($apiEndpoint);
+        $response = Http::withHeaders([
+            'Authorization' => 'Basic ' . base64_encode('admin@gmail.com:password'),
+            'Content-Type' => 'application/x-www-form-urlencoded',
+        ])->post('http://convertolink.taskpro.tj/photoLink/public/api/convert-photo-to-link', [
+            'base65' => $base64Image,
+            'goodID' => rand(1, 9000),
+        ]);
 
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $responseData = $response->json();
 
-        $response = curl_exec($ch);
-
-        curl_close($ch);
-
-        $responseData = json_decode($response, true);
-
-        if (isset($responseData['data']['url'])) {
-            return $responseData['data']['url'];
-        } else {
-            dd(1);
-        }
+        return $responseData['url'];
     }
-
-
 
 
     public function returnGoods()
@@ -222,5 +212,15 @@ class GetGoods
         }
 
         return redirect()->route('platform.market');
+    }
+
+
+    public function changeAvailability() {
+        $goods = Good::all();
+
+        foreach ($goods as $good) {
+            $good->availability = true;
+            $good->save();
+        }
     }
 }

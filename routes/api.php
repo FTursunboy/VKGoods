@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('get/goods', [\App\Http\Controllers\ConnectVK::class, 'connect']);
 Route::get('get/goods/service', [\App\Services\GetGoods::class, 'connect']);
 Route::get('get/goods/return', [\App\Services\GetGoods::class, 'returnGoods']);
+Route::get('change/avail', [\App\Services\GetGoods::class, 'returnGoods']);
